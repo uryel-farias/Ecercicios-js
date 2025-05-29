@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 2 - Livro</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <main>
+        <h1>Exercícios do livro - LP e Agoritmos com Javascript</h1>
+    </main>
+    <section>
+        <h2>Capitulo 02</h2>
+        <h2>1 - Farmácia JS</h2>
+
+        <div class="exercicio-entradas">
+            <p class="texto">
+                O programa deve
+                ler o valor de cada 15 minutos de uso de um computador e o tempo de
+                uso por um cliente em minutos. Informe o valor a ser pago pelo cliente,
+                sabendo que as frações extras de 15 minutos devem ser cobradas de
+                forma integral.   
+            </p>
+            <div class="entradas">
+                <label class="texto-entrada" for="descricao-valor">Valor por 15 min de uso R$: </label>
+                <input class="campo-entrada" type="number" name="descricao-valor" id="descricao-valor">
+            </div>
+
+            <div class="entradas">
+                <label class="texto-entrada" for="tempo-de-uso">Tempo de uso do cliente (em minutos): </label>
+                <input class="campo-entrada" type="number" name="tempo-de-uso" id="tempo-de-uso">
+            </div>       
+
+            <input type="button" value="Calcular valor a pagar" id="botao">
+        </div>
+
+        <div class="resultado">
+            <p class="texto" id="valor-a-pagar"></p>
+        </div>
+
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
