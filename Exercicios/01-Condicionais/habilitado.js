@@ -1,4 +1,5 @@
-const entrada = parseInt(prompt('Digite sua idade: '));
+var readlineSync = require('readline-sync');
+const entrada = parseInt(readlineSync.question('Digite sua idade: '));
 
 if (entrada < 18) {
     console.log('Você ainda não pode tirar a habilitação.');
