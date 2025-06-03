@@ -1,14 +1,25 @@
 var readlineSync = require('readline-sync');
-let numeros = []
-let maior, numero = 0;
+let maior, menor;
 
 console.log("O maior entre 3 numeros.")
 
-for ( let index = 3 ; index > 0 ; index--){
-    numeros.push(parseInt(readlineSync.question('Digite um numero: ')));
+let numero1 = parseInt(readlineSync.question('Digite um numero: '));
+let numero2 = parseInt(readlineSync.question('Digite um numero: '));
+let numero3 = parseInt(readlineSync.question('Digite um numero: '));
 
+if ( numero1 > numero2) {
+    maior = numero1;
+    menor = numero2;
+} else if (numero3 > maior) {
+    maior = numero3;
+    if (numero3 < menor) {
+        menor = numero3;
+    }
 }
 
+console.log(numero1)
+console.log(typeof(numero1))
 
-console.log(numeros)
+console.log(`O maior número foi: ${maior}`);
+console.log(`O menor número foi: ${menor}`);
 
