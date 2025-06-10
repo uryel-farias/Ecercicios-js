@@ -7,9 +7,11 @@ if(hora === 0) {
     console.log(`A hora e 12 hrs da noite.`)
 } else if (hora > 0 && hora <= 12) {
     console.log(`A hora é ${hora}:00 hrs da manha.`)
-} else if (hora > 12 && hora <= 23) {
+} else if (hora > 12 && hora <= 17) {
+    console.log(`A hora é ${horaConvertida}:00 hrs da tarde.`)
+} else if (hora >= 18 && hora <= 22) {
     console.log(`A hora é ${horaConvertida}:00 hrs da noite.`)
-}else if (hora > 23) {
+} else if (hora > 23) {
     console.log("Digite um horario valido.")
 } else {
     console.log("Digite um horario valido.")
