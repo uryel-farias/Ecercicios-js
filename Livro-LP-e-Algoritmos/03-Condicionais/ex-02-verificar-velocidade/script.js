@@ -1,4 +1,4 @@
-const resultado = document.querySelector('#resultado')
+const resultado = document.querySelector('#resultado').value;
 const botao = document.querySelector('#botao');
 
 function LimpaCampo() {
@@ -9,16 +9,18 @@ function LimpaCampo() {
 botao.addEventListener("click", () => {
 
     const velocidadePermitida = Number(document.querySelector('#velocidade_permitida').value);
+    console.log(velocidadePermitida);
     const velocidadeCondutor = Number(document.querySelector('#velocidade_condutor').value);
+    console.log(velocidadeCondutor);
 
     if (velocidadeCondutor <= velocidadePermitida) {
-        resultado.innerText = 'Sem multa';
+        resultado.value = 'Sem multa';
     } else if (velocidadeCondutor > velocidadePermitida &&
         velocidadeCondutor <= velocidadePermitida * 1.2
      ) {
-        resultado.innerText = 'Multa Leve';
+        resultado.value = 'Multa Leve';
     } else {
-        resultado.innerText = 'Multa Grave';
+        resultado.value = 'Multa Grave';
     }
 
 
