@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 4 - Livro</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <main>
+        <h1>Exercícios do livro - LP e Agoritmos com Javascript</h1>
+    </main>
+    <section>
+        <h2>Capitulo 04</h2>
+        <h2>4 - Lados de um triângulo</h2>
+
+        <div class="exercicio-entradas">
+            <p class="texto">
+                Elaborar um programa que leia três lados e veri½que se eles podem ou não
+                formar um triângulo. Para formar um triângulo, um dos lados não pode ser
+                maior que a soma dos outros dois. Caso possam formar um triângulo, exiba
+                também qual o tipo do triângulo: Equilátero (3 lados iguais), Isósceles (2
+                lados iguais) e Escaleno (3 lados diferentes)  
+            </p>
+            <div class="entradas">
+                <label class="texto-entrada" for="ladoA">Lado A:  </label>
+                <input class="campo-entrada" type="number" name="ladoA" id="ladoA">
+            </div> 
+            <div class="entradas">
+                <label class="texto-entrada" for="ladoB">Lado B:  </label>
+                <input class="campo-entrada" type="number" name="ladoB" id="ladoB">
+            </div> 
+            <div class="entradas">
+                <label class="texto-entrada" for="ladoC">Lado C:  </label>
+                <input class="campo-entrada" type="number" name="ladoC" id="ladoC">
+            </div> 
+
+            <input type="button" value="Verificar Lados" id="botao">
+        </div>
+
+        <div class="resultados">
+            <p class="texto" id="resultado1"></p>
+            <p class="texto" id="resultado2"></p>
+        </div>
+
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
