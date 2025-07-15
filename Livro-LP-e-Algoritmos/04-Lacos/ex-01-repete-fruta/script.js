@@ -1,9 +1,14 @@
 const botao  = document.querySelector('#botao');
 
+
 botao.addEventListener("click", () => {
     const fruta = document.querySelector('#fruta').value;
-    const quantidade = document.querySelector('#numero').value;
+    const quantidade = Number(document.querySelector('#numero').value);
+    let resultado = document.querySelector('#resultado');
+
+    console.log(fruta);
+    console.log(quantidade);
+
+    resultado.innerText = `${fruta}`;
 })
 
-console.log(fruta);
-console.log(quantidade);
