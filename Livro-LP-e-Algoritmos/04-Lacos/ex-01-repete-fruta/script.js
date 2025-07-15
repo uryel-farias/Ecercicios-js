@@ -15,6 +15,9 @@ botao.addEventListener("click", () => {
         }
     }
 
+    document.querySelector('#fruta').value = '';
+    document.querySelector('#numero').value = '';
+
     console.log(fruta);
     console.log(quantidade);
 
