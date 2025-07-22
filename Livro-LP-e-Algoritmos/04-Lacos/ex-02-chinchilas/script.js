@@ -3,9 +3,18 @@ const botao  = document.querySelector('#botao');
 
 botao.addEventListener("click", () => {
 
-    const chincilas = Number(document.querySelector("#chinchila").value);
-    const anos = Number(document.querySelector("#ano").value);
     let resposta = document.querySelector(".resultados");
+    resposta.textContent = '';
+    
+    let chincilas = Number(document.querySelector("#chinchila").value);
+    const anos = Number(document.querySelector("#ano").value);
+
+    for (let contador = 1; contador <= anos; contador++ ) {
+        const item = document.createElement("p");
+        item.textContent = `Ano ${contador}, número de chinchilas: ${chincilas =  chincilas * 3}.`;
+
+        resposta.appendChild(item);
+    }
 
     console.log(anos);
 
