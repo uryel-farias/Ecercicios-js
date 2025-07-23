@@ -11,7 +11,7 @@ botao.addEventListener("click", () => {
 
     for (let contador = 1; contador <= anos; contador++ ) {
         const item = document.createElement("p");
-        item.textContent = `Ano ${contador}, número de chinchilas: ${chincilas =  chincilas * 3}.`;
+        item.textContent = `${contador}º Ano: ${chincilas =  chincilas * 3} Chinchilas.`;
 
         resposta.appendChild(item);
     }
