@@ -7,23 +7,28 @@ botao.addEventListener("click", () => {
     let resto;
 
     for (let index = 1; index < numero; index++) {
-        console.log(`Index = ${index}`)
+        //console.log(`Index = ${index}`)
         resto = numero % index;
-        console.log(`resto = ${resto}`)
+        //console.log(`resto = ${resto}`)
 
         if(resto === 0) {
             acumulador += index;
         }
 
-        console.log(`---------------------------`)
+        
+        //console.log(`---------------------------`)
         
     }
+
+
     
     console.log(`*******************************`)
+    if ( acumulador === numero) {
+        console.log(`O número ${numero} é Perfeito!`)
+    }
     console.log(`Acumulador = ${acumulador}`)
     console.log(`------------FIM----------------`)
-    //console.log(`Acumuluador = ${acumulador}`)
-    //console.log(`Número = ${numero}`)
+
 
 
 
