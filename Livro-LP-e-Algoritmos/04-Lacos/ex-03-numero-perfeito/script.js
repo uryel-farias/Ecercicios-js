@@ -3,6 +3,8 @@ const botao  = document.querySelector('#botao');
 
 botao.addEventListener("click", () => {
     const numero = Number(document.querySelector('#numero').value);
+    const resultado = document.querySelector('#resultado');
+    resultado.textContent = '';
     let acumulador = 0;
     let resto;
 
@@ -24,7 +26,10 @@ botao.addEventListener("click", () => {
     
     console.log(`*******************************`)
     if ( acumulador === numero) {
-        console.log(`O número ${numero} é Perfeito!`)
+        console.log(`O número ${numero} é Perfeito!`);
+        resultado.textContent = (`O número ${numero} é Perfeito!`);
+    } else {
+        resultado.textContent = (`Que pena, o número ${numero} não é Perfeito.`);
     }
     console.log(`Acumulador = ${acumulador}`)
     console.log(`------------FIM----------------`)
